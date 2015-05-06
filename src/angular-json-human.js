@@ -21,7 +21,7 @@ angular.module('yaru22.jsonHuman', [
         scope.isNumber = _.isNumber(json);
         scope.isString = _.isString(json);
         scope.isPrimitive = scope.isBoolean || scope.isNumber || scope.isString;
-        scope.isObject = _.isPlainObject(json);
+        scope.isObject = _.isObject(json);
         scope.isArray = _.isArray(json);
         scope.isEmpty = _.isEmpty(json);
       };
@@ -44,7 +44,7 @@ angular.module('yaru22.jsonHuman', [
           }
         }
         scope.json = json;
-        scope.isObject = _.isPlainObject(json);
+        scope.isObject = _.isObject(json);
         scope.isArray = _.isArray(json);
       });
     }

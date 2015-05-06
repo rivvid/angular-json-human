@@ -34,7 +34,7 @@
 
   "dependencies": {
     "angular": "^1.2.0",
-    "lodash": "~2.4.1"
+    "underscore": "~1.8.x"
   },
   "devDependencies": {
     "angular-mocks": "^1.2.0",

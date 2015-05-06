@@ -1,6 +1,6 @@
 /**
  * Angular directive to convert JSON into human readable table. Inspired by https://github.com/marianoguerra/json.human.js.
- * @version v1.2.1 - 2014-12-22
+ * @version v1.2.1 - 2015-05-06
  * @link https://github.com/yaru22/angular-json-human
  * @author Brian Park <yaru22@gmail.com>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -26,7 +26,7 @@ angular.module('yaru22.jsonHuman', ['yaru22.jsonHuman.tmpls']).factory('Recursio
             scope.isNumber = _.isNumber(json);
             scope.isString = _.isString(json);
             scope.isPrimitive = scope.isBoolean || scope.isNumber || scope.isString;
-            scope.isObject = _.isPlainObject(json);
+            scope.isObject = _.isObject(json);
             scope.isArray = _.isArray(json);
             scope.isEmpty = _.isEmpty(json);
           };
@@ -48,7 +48,7 @@ angular.module('yaru22.jsonHuman', ['yaru22.jsonHuman.tmpls']).factory('Recursio
           }
         }
         scope.json = json;
-        scope.isObject = _.isPlainObject(json);
+        scope.isObject = _.isObject(json);
         scope.isArray = _.isArray(json);
       });
     }
